@@ -1,0 +1,265 @@
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    color: white;
+}
+
+p {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/*diseño nav-bar*/
+.nav-bar {
+    width: 100%;
+    height: 4rem;
+    position: relative;
+    background: linear-gradient(90deg, rgba(12,12,13,1) 0%, rgba(74,74,74,1) 49%, rgba(18,18,18,1) 100%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 50;
+    & img {
+        width: 100%;
+        height: 4rem;
+    }
+    & .menu-bar {
+        height: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        & a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 0.5rem;
+            text-decoration: none;
+            color: #D0A933;
+            &:hover {
+                background-color: #00000050;
+                color: white;
+            }
+        }
+    }
+    & .menu-1icon- {
+        font-size: 2.5rem;
+        color: #D0A933;
+    }
+}
+
+/*diseño para el header hero-image*/
+.header {
+    width: 100%;
+    height: 50rem;
+    background-image: url(/img/hero-image.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & .header__content {
+        text-align: center;
+        & h1 {
+            margin: 0 1rem;
+            padding: 0;
+            color: #D0A933;
+            text-shadow: -3px -2px 4px rgba(0, 0, 0, 1);
+            font-size: clamp(3.125rem, 3.464vw + 2.229rem, 5rem);
+            line-height: clamp(4.688rem, 3.349vw + 3.821rem, 6.5rem);
+        }
+    }
+}
+
+/*diseño y alineado de cajas para el main*/
+
+.box-servicio {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(12,12,13,1) 0%, rgba(74,74,74,1) 49%, rgba(18,18,18,1) 100%);
+    padding: 2rem;
+    & .box-info {
+        & h2 {
+            color: #D0A933;
+            font-weight: 800;
+            font-size: 2rem;
+        }
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    & .box-flex {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        & div { 
+            & img {
+                border-radius: 0.5rem;
+                width: 25rem;
+                height: 20rem;
+                margin: 1.5rem;
+            }
+        }
+            
+    }
+}
+
+.box-carta {
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(90deg, rgba(125,125,125,1) 0%, rgba(164,164,164,1) 49%, rgba(78,78,78,1) 100%);
+    & .centrar-box {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 1.5rem;
+        color: white;
+        & h2 {
+            text-align: center;
+            color: #D0A933;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        & h3 {
+            color: #D0A933;
+        }
+        & h4 {
+            color: black;
+        }
+        & h3, h4 {
+            margin: 0;
+        }
+    }
+}
+
+.box-contact {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(90deg, rgba(12,12,13,1) 0%, rgba(74,74,74,1) 49%, rgba(18,18,18,1) 100%);
+    padding: 2rem;
+    & h2 {
+        text-align: center;
+        color: #D0A933;
+        font-weight: 800;
+        font-size: 2rem;
+    }
+    & form {
+        display: flex;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        & input:not([type="submit"]), textarea {
+            padding: 0.5rem;
+            margin: 1rem 0;
+            border-radius: 0.3rem;
+            border: 2px solid #D0A933;
+            background-color: #00000050;
+            color: white;
+        }
+        & input[type="submit"] {
+            border-radius: 0.3rem;
+            padding: 0.5rem;
+            background-color: #D0A933;
+            color: black;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            cursor: pointer;
+            &:hover {
+                background-color: #00000050;
+                color: white;
+            }
+        }
+    }
+}
+
+/*diseño del footer*/
+
+.footer {
+    background-color: #000;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    & .box1-footer img {
+        width: 8rem;
+        height: 8rem;
+    }
+    & .box2-footer {
+        text-align: center;
+        & ul {
+            list-style-type: none;
+            & li a {
+                margin: 0.5rem 0;
+                color: white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    & .box3-footer a {
+        text-decoration: none;
+        & span {
+            font-size: 2rem;
+            color: white;
+        }
+    }
+}
+
+/*responsivo la nav bar*/
+#menu-bar{ 
+    display: none; 
+} 
+
+nav label{ 
+    float: right;     
+    cursor: pointer; 
+} 
+
+.menu {     
+    position: absolute;     
+    top: 4rem;     
+    left: 0;
+    width: 100%;     
+    background: rgba(51,51,51,0.9);
+    transition: all 0.5s; 
+    transform: translateX(-100%); 
+} 
+
+.menu a {     
+    display: block;            
+} 
+
+#menu-bar:checked ~ .menu{ 
+    transform: translateX(0%); 
+} 
+
+@media(min-width:1024px){ 
+    .menu {         
+        position: static;         
+        width: auto;         
+        height: auto; 
+        transform: translateX(0%); 
+        background-color: inherit;      
+        float: right; 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    } 
+    nav label{ 
+        display: none; 
+    } 
+}  
