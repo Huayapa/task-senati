@@ -1,0 +1,230 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    height: 100vh;
+}
+body {
+    margin: 0;
+    height: 100vh;
+}
+/* estilo para el boton de index.html "iniciar sesion" */
+.login-in div {
+    margin: 2rem 0;
+    & a {
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        color: white;
+        background-color: royalblue;
+        border-radius: 0.4rem;
+        &:hover {
+            background-color: #00000070;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}
+
+/*estilos general para php*/
+.nav-bar {
+    padding: 0.5rem;
+    background-color: #333;
+}
+
+/*Estilos para iniciar sesion y nueva cuenta*/
+.main {
+    width: 100%;
+    text-align: center;
+    & h2 {
+        font-size: 3rem;
+        font-weight: 400;
+    }
+    & .main__form {
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        & .form__datos {
+            margin-bottom: 3rem;
+            & input {
+                padding: 0.5rem;
+                width: 90%;
+                margin: 0.5rem 0;
+                border-radius: 0.3rem;
+                border: 2px solid #00000040;
+                transition: all 0.1s ease-in-out;
+                &:focus {
+                    outline: unset;
+                    border-color: #333;
+                    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                }
+            }
+        }
+    }
+}
+.form__interactuar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    & input, a {
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        text-decoration: none;
+        color: white;
+        border: 0;
+        &:hover:not(.enlace_2) {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+    & input, .enlace_0 {
+        background-color: royalblue;
+    }
+    & .enlace_1 {
+        background-color: forestgreen;
+    }
+    & .enlace_2 {
+        color: royalblue;
+        transition: all 0.5s ease-in;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+/*estilos para panel.php*/
+
+.navbar-hackathon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background-color: rgb(135, 206, 230);
+    & h1 {
+        color: darkred;
+        font-weight: 600;
+    }
+    & .hackaton {
+        width: 14rem;
+    }
+}
+.box1 {
+    grid-area: box1;
+    text-align: center;
+    height: auto;
+    padding: 2rem 2rem;
+    & img {
+        width: 20rem;
+        height: auto;
+    }
+}
+.box2 {
+    grid-area: box2;
+    background-color: rgb(135, 206, 230);
+    & .box2_title {
+        margin: 0;
+        padding: 1rem;
+        background-color: white;
+        font-weight: 400;
+    }
+    & .box2_perfil {
+        padding: 2rem;
+        & h2 {
+            margin: 0;
+            font-weight: 300;
+        }
+        & div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & img {
+                width: 20rem;
+                height: auto;
+            }
+            & a {
+                margin: 2rem 0;
+            }
+        }
+    }
+}
+.box3 {
+    text-align: center;
+    height: auto;
+    grid-area: box3;
+    background-color: rgb(135, 206, 230);
+    padding: 1rem;
+}
+.nav-bar-box0 {
+    width: 100%;
+    grid-area: nav-bar;
+    background-color: #333;
+    text-align: center;
+    & enlaces {
+        display: flex;
+        align-items: center;
+    }
+    & img {
+        width: 12rem;
+        height: 4rem;
+        margin: 2rem;
+    }
+    & a {
+        padding: 1.5rem 4rem;
+        text-decoration: none;
+        color: white;
+        &:hover {
+            background-color: #ffffff80;
+        }
+    }
+}
+.main-panel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 11rem 7rem 1fr 1fr;
+    grid-template-areas: 
+        "nav-bar"
+        "box3"
+        "box2"
+        "box1"
+    ;
+}
+@media (min-width: 1024px) {
+    .main-panel {
+        grid-template-columns: 18% 1fr 150px;
+        grid-template-rows: 4rem 4rem 100%;
+        grid-template-areas: 
+            "box1 nav-bar box3"
+            "box1 box2 box3"
+            "box1 box2 ."
+        ;
+    }
+    .nav-bar-box0 {
+        text-align: start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & .enlaces {
+            width: 40%;
+        }
+    }
+    .box1 {
+        grid-area: box1;
+        text-align: center;
+        height: auto;
+        padding: 2rem 2rem;
+        width: 100%;
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .box2_perfil {
+        height: 100%;
+        & div {
+           width: 40%;
+        }
+    }
+}

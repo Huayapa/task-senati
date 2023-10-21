@@ -1,0 +1,19 @@
+#info {
+	background: Snow;
+	color: #333;
+	text-align: center;
+}
+#info .contenedor {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.info-pet {
+	margin: 15px;
+}
+.info-pet img {
+	width: 250px;
+	height: 250px;
+	border-radius: 60%;
+	border: 1px solid SaddleBrown;
+}

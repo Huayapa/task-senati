@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+<head>
+    <title>APPMEDIA DIGITAL - Empresa de desarrollo de Apps/Aplicaciones Móviles Perú</title>
+    <meta charset="utf-8">
+    <meta name="description" content="AppMedia es una empresa digital especializada en Sistemas e Innovaciones">
+    <meta name="keywords" content="Redes,Sociales, Android Studio, Bootstrap, Angular, HTML5, CSS3, JavaScript">
+    <meta NAME="Title" CONTENT="APPMEDIA"/>
+    <meta NAME="Author" CONTENT="Jorge Antonio Luque Chambi"/>
+    <meta NAME="Language" CONTENT="Spanish"/>
+    <meta NAME="Revisit" CONTENT="1 day"/>
+    <meta NAME="Distribution" CONTENT="Global"/>
+    <meta NAME="Robots" CONTENT="All"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="img/main.png">
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#marketing">Marketing Digital</a>
+                <a href="#contacto">Contacto</a>
+                <a href="#">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="banner">
+            <img src="img/portada.jpg"></img>
+            <div class="contenedor">
+                <h1 class="banner">AppMedia</h1>
+                <p class="banner"> Tenemos el mejor plan de proyectos para tu empresa. </p>
+                <a href="#bienvenida">Leer más</a>
+            </div>
+        </section>
+        <a name="bienvenida"></a>
+        <section id="bienvenidos">
+            <h2> Bienvenidos a App Media Digital </h2>
+            <p> Estamos cada vez mejorando nuestros servicios. </p>
+            <br>
+            <div class="login-in">
+                <h2>Enlace para Iniciar sesion</h2>
+                <div>
+                    <a href="iniciar.php">Iniciar Sesión</a>
+                </div>
+            </div>
+        </section>
+        <section id="blog">
+            <h3> Lo último de App Media Digital </h3>
+            <div class="contenedor1">
+                <article>
+                    <img src="img/asesoria.jpg">
+                    <h4> Asesoría</h4>
+                </article>
+                <article>
+                    <img src="img/servicios.jpg">
+                    <h4>Servicios</h4>
+                </article>
+                <article>
+                    <img src="img/web.jpg">
+                    <h4>Web</h4>
+                </article>
+            </div>
+
+        </section>
+        <a name="servicios"></a>
+        <section id="info">
+            <h3>Nuestros Servicios</h3>
+            <p class="banner">
+                Contacto con uno de nuestros asesores
+            </p>
+            <div class="contenedor2">
+                <tr>
+
+                    <div class="info-pet">
+                        <img src="img/desarrollo.jpg">
+                        <h4>Desarrollo Web</h4>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="info-pet">
+                        <img src="img/contenidos.jpg">
+                        <h4>Contenidos</h4>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="info-pet">
+                        <img src="img/hosting.jpg">
+                        <h4>Hosting</h4>
+                    </div>
+                </tr>
+                <tr>
+                   <div class="info-pet">
+                        <img src="img/Marketing.jpg">
+                        <h4>Marketing Digital</h4>
+                    </div>
+                </tr>
+            </div>
+        </section>
+        <a name="marketing"></a>
+        <section id="info">
+            <h3>Marketing Digital</h3>
+            <p class="banner">
+                Contacto con uno de nuestros asesores
+            </p>
+            <div class="contenedor3">
+                <table>
+                    <tr>
+                        <div class="info-pet">
+                            <img src="img/desarrollo.jpg">
+                            <h4>SEO</h4>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="info-pet">
+                            <img src="img/contenidos.jpg">
+                            <h4>SEM</h4>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="info-pet">
+                            <img src="img/hosting.jpg">
+                            <h4>Redes Sociales</h4>
+                        </div>
+                    </tr>
+                    <tr>
+                       <div class="info-pet">
+                            <img src="img/Marketing.jpg">
+                            <h4>Contenidos Digitales</h4>
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <a name="contacto"></a>
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <p class="banner">
+                Contacto con uno de nuestros asesores
+            </p>
+            <div class="contenedor3">
+                <table>
+                    <tr>
+                        <div class="info-pet">
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="info-pet">
+                            <form action="registro.php" method="POST">
+				                <label class="contacto">Nombre</label><br>
+				                <input type="text" name="nombre" placeholder="Ingrese sus nombres" class="contacto"><br>
+				                <label class="contacto">Apellido</label><br>
+				                <input type="text" name="apellido" placeholder="Ingrese sus apellidos" class="contacto"><br>
+				                <label class="contacto">Correo</label><br>
+				                <input type="email" name="correo" class="contacto" placeholder="Ingrese su correo"><br>
+				                <label class="contacto">Mensaje</label><br>
+				                <textarea class="contacto" rows="6"></textarea><br>
+				                <input type="submit" name="envia" value="Enviar" class="boton1">
+            				</form>
+                        </div>
+                    </tr>
+                    <tr>
+                        <div class="info-pet">
+                        </div>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p class="copy">
+                My AppMedia &copy; 2019
+            </p>
+            <div class="sociales">
+                <a class="icon-facebook" href="http://www.facebook.com"></a>
+                <a class="icon-twitter" href="#"></a>
+                <a class="icon-instagram" href="#"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
