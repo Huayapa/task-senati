@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Empresarial</title>
+    <!-- link bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- link css personal -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- iconos bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- icono img-->
+    <link rel="icon" href="img/icon-logo.png">
+</head>
+<body>
+    <!--++++++++++++++++++ navbar +++++++++++++++++++++++++++-->    
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark position-sticky top-0 z-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+        <img src="img/logo-pc.png" alt="logo pc">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-xl-auto">
+            <!-- inicio -->
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <!-- informacion -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#informacion">Información</a>
+            </li>
+            <!-- ubicacion -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#ubicacion">Ubicación</a>
+            </li>
+            <!-- articulos -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#articulos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Articulos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html#pc">Computadoras</a></li>
+              <li><a class="dropdown-item" href="index.html#laptop">Laptops</a></li>
+              <li><a class="dropdown-item" href="index.html#component">componentes</a></li>
+              <li><a class="dropdown-item" href="index.html#perifericos">Perifericos</a></li>
+            </ul>
+          </li>
+            <!-- contacto -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#contacto">Contacto</a>
+            </li>
+            <!-- oferta -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#oferta">Ofertas</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+    </nav>
+    <!--+++++++++++++++++ header  +++++++++++++++++++++++++++-->
+    <header class="container-fluid vh-50 hero-img text-center d-flex flex-column justify-content-center text-light">
+            <h1 class="display-2 fw-bold">Tienda de componentes y pc</h1>
+            <h2 >Unite al mundo de la tecnologia con los mejores precios</h2>
+    </header>
+    <!--+++++++++++++++++ main ++++++++++++++++++++++++++++++-->
+    <main>
+      <!--1111111111111111 Ofertas 11111111111111111-->
+      <section class="container " id="oferta">
+        <h2 class="text-danger text-center ">Ofertas</h2>
+        <div id="carouselExampleSlidesOnly" class="container carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" id="1">
+              <a href="articulo.html" target="_blank">
+                <img src="img/of-1.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item" id="2" >
+              <a href="articulo.html" target="_blank">
+                <img src="img/of-2.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item" id="3">
+              <a href="articulo.html" target="_blank">
+                <img src="img/of-3.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+            <div class="carousel-item" id="4">
+              <a href="articulo.html" target="_blank">
+                <img src="img/of-4.jpg" class="d-block w-100" alt="...">
+              </a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!--1111111111111111 Información 11111111111111111-->
+      <section class="container" id="informacion">
+        <article class="row border m-4 rounded-3 align-items-center">
+          <div class="col-sm-12 col-xl-6 p-3">
+            <h2 class="display-4">Nosotros somos</h2>
+            <p class="lead">Somo una empresa mayorista de componentes electronicos.</p>
+            <hr class="my-4">
+            <p class="lead">
+              Esta empresa fue fundada en el año 2000, nuestros motivos de seguir adelante, es ofrecer y garantizar la tecnologia de los clientes en la palma de la mano, con buenos descuentos y precios accesible para todos, ademas contamos con una garantia de 100% en nuestros productos
+            </p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#contacto" role="button">Contactanos</a>
+            </p>
+          </div>
+          <div class="col-sm-12 col-xl-6 p-3 text-center">
+            <img src="img/info-1.jpg" alt="" class="rounded-2 border img-fluid" >
+          </div>
+        </article>
+        <article class="row border m-4 rounded-4 align-items-center">
+          <div class="col-sm-12 col-xl-6 p-3 order-1 order-xl-4">
+            <h2 class="display-4">Servicios</h2>
+            <p class="lead">Servicio en el mantenimiento y garantia</p>
+            <hr class="my-4">
+            <p class="lead">
+              La garantia de nuestros productos pueden ser como maximo de 1 año "depende del producto", esta garantia cubre los malos componentes de fabrica o errores al darle mantenimiento, por lo cual usted no pagara nada hasta que acabe la garantia, <b>Si el daño fue causado afuera de las sucursales no se validara</b>
+            </p>
+          </div>
+          <div class="col-sm-12 col-xl-6 p-3 order-2 order-xl-1 text-center">
+            <img src="img/info-garantia.avif" alt="" class="rounded-2 border img-fluid" >
+          </div>
+        </article>
+      </section>
+      <!--1111111111111111 ubicacion 11111111111111111111-->
+      <section class="container-fluid bg-dark text-light p-2 text-center" id="ubicacion">
+        <h2 >Ubicacion</h2>
+        <p>
+          Puede ubicarnos en Av. Garcilaso de la Vega 1186-1272.
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.8265238311933!2d-77.0401979884546!3d-12.055454088132766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95c52ec6209%3A0x9f690f7b812a5006!2sWilson%20centro%20c%C3%B3mputo%20compras!5e0!3m2!1ses-419!2spe!4v1698357370569!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="img-thumbnail"></iframe>
+      </section>
+      <!--11111111111111111 Articulos 1111111111111111111-->
+      <section class="container" id="articulos">
+        <!-- computadores -->
+        <article class="container my-3" id="pc">
+          <h2 class="text-center">Computadoras</h2>
+          <section class="container border my-4 row flex-wrap justify-content-center">
+            <!-- articulos 1 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-1.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0 fw-bold">3000 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 2 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-2.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, nvidia gt 730, 16gb de ram ddr4 2600ghz, 1HDD de 1TB, 1SSD de 480GB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">1010 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 3 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-3.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Ryzen 5 5600g, gtx 1660, 16gb de ram ddr4 3200ghz, 1SSD de 480gb, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">2200 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 4 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-4.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">ryzen 5 5600g, gt 730, 8gb de ram ddr4 3200ghz,HDD 1TB, SSD 480gb, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">900 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 5 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-5.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">4000 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 6 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-6.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">3600 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 7 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-7.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">2060 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 8 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pc-8.jpeg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PC GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">11500 soles</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </article>
+        <!-- Laptops -->
+        <article class="container my-3" id="laptop">
+          <h2 class="text-center">Laptops</h2>
+          <section class="container border my-4 row flex-wrap justify-content-center">
+            <!-- articulos 1 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-1.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0 fw-bold">3000 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 2 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-2.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, nvidia gt 730, 16gb de ram ddr4 2600ghz, 1HDD de 1TB, 1SSD de 480GB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">1200 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 3 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-3.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Ryzen 5 5600g, gtx 1660, 16gb de ram ddr4 3200ghz, 1SSD de 480gb, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-danger col opacity-75 ">Agotado</a>
+                  <p class="text-danger text-center col m-0">2950 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 4 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-4.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">ryzen 5 5600g, gt 730, 8gb de ram ddr4 3200ghz,HDD 1TB, SSD 480gb, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">3300 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 5 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-5.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">4100 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 6 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-6.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">1200 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 7 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-7.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">2300 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 8 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/lap-8.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LAPTOP GAMER</h5>
+                <p class="card-text">Intel core i7 7600g, radeon rx 5600, 16gb de ram ddr4 3200ghz, 1HDD de 1TB, pantalla, mouse y teclado incluido</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">4700 soles</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </article>
+        <!-- componentes -->
+        <article class="container my-3" id="component">
+          <h2 class="text-center">Componentes</h2>
+          <section class="container border my-4 row flex-wrap justify-content-center">
+            <!-- articulos 1 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-1.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TARJETA GRAFICA</h5>
+                <p class="card-text">Geforce gtx 1660 super</p>
+                <div class="row justify-content-center align-items-center">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0 fw-bold">700 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 2 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-2.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROCESADOR</h5>
+                <p class="card-text">ryzen 5 5600g</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">800 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 3 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-3.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TARJETA GRAFICA</h5>
+                <p class="card-text">nvidia Geforce rtx 3070</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">2000 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 4 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-4.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RAM</h5>
+                <p class="card-text">8gb de ram ddr4 3200ghz</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">120 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 5 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-5.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">RAM</h5>
+                <p class="card-text">16gb de ram ddr4 3200ghz</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">240 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 6 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-6.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">PROCESADOR</h5>
+                <p class="card-text">Intel core i7 7600g</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">1300 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 7 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-7.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">CAMARA WEB</h5>
+                <p class="card-text">1080 full HD, 60hz</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">500 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 8 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/com-8.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MAINBOARD</h5>
+                <p class="card-text">PB GIGABYTE AM4 A520M S2H M-ATX/2XDDR4/4XSATA6/1XUSB 3.2/2X</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">790 soles</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </article>
+        <!-- perifericos -->
+        <article class="container my-3" id="perifericos">
+          <h2 class="text-center">Perifericos</h2>
+          <section class="container border my-4 row flex-wrap justify-content-center">
+            <!-- articulos 1 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-1.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MOUSE GAMER</h5>
+                <p class="card-text">MOUSE REDRAGON COBRA M711 WHITE RGB 1000 DPI USB</p>
+                <div class="row justify-content-center align-items-center">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0 fw-bold">120 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 2 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-2.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MOUSE GAMER</h5>
+                <p class="card-text">Razer Cobra Pro Mouse</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">300 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 3 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-3.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HEADSET</h5>
+                <p class="card-text">Redragon Ire Wireless H848 Audífonos Multiplataforma - Morado</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">120 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 4 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-4.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TECLADO GAMER</h5>
+                <p class="card-text">Teclado gamer bluetooth Redragon Fizz Pro K616-RGB QWERTY Red inglés US color blanco y gris con luz RGB</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">220 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 5 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-5.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">TECLADO GAMER</h5>
+                <p class="card-text">Teclado gamer Logitech Pro Series G Pro QWERTY GX Blue Clicky inglés US color negro con luz RGB
+                  z</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">700 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 6 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-6.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">MOUSE GAMER</h5>
+                <p class="card-text">MOUSE PRIMUS GLADIUS 12400T RGB MANDALORIAN EDITION 12400 DPI (PN:PMO-S202ML)</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">300 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 7 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-7.jpg" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">HEADSET</h5>
+                <p class="card-text">MSI DS501 Gaming</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">600 soles</p>
+                </div>
+              </div>
+            </article>
+            <!-- articulos 8 -->
+            <article class="col-2 card m-2" style="width: 18rem;">
+              <img src="img/pe-8.webp" class="card-img-top move" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">SILLA GAMER</h5>
+                <p class="card-text">Silla Gamer Marvo CH-106 Negro/Rojo</p>
+                <div class="row justify-content-center align-items-center fw-bold">
+                  <a href="articulo.html" class="btn btn-success col">Mas detalles</a>
+                  <p class="text-danger text-center col m-0">900 soles</p>
+                </div>
+              </div>
+            </article>
+          </section>
+        </article>
+      </section>
+      <!--11111111111111111 contactos 11111111111111111111-->
+      <section class="container-fluid bg-dark text-light p-2 py-4 mt-2 mb-3" id="contacto">
+        <h2 class="text-center">Contactanos</h2>
+        <p class="text-center">
+          Si tienes alguna duda o quieres comprar o cotizar algun componentes, puedes enviar un mensaje con tu correo.
+        </p>
+        <div class="container">
+          <form action="#" class="container-xxl text-light">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Ingrese el Correo</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@dominio.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Ingrese el mensaje</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <select class="form-select my-4" aria-label="Default select example">
+              <option selected>Selecciona un motivo</option>
+              <option value="1">Consulta</option>
+              <option value="2">garantia</option>
+            </select>
+            <div class="d-flex text-center align-items-center justify-content-center">
+              <button type="submit" class="btn btn-success mx-2">Enviar</button>
+              <button type="reset" class="btn btn-danger mx-2">Limpiar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--+++++++++++++++++ footer +++++++++++++++++++++++++++ -->
+    <footer class="container-fluid bg-dark text-light">
+        <div class="container d-flex py-3 justify-content-between flex-wrap">
+            <i>Somos una tienda 100% responsable</i>
+            <div class="d-flex justify-content-evenly">
+                <i class="bi bi-twitter-x mx-2"></i>
+                <i class="bi bi-whatsapp mx-2"></i>
+                <i class="bi bi-youtube mx-2"></i>
+            </div>
+        </div>
+    </footer>
+    <!--++++++++++ link javascript bootstrap ++++++++++++++++-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+* {
+    scroll-snap-type: mandatory !important;
+    scroll-padding-top: 10ch;
+}
+.navbar-brand img {
+    width: auto;
+    height: 58px;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+.vh-90 {
+    height: 90vh;
+}
+
+.hero-img {
+    background-size: cover;
+    background-image: url(/img/hero-image.webp);
+    background-attachment: fixed;
+    background-repeat: round;
+}
+
+.img-thumbnail {
+    height: 400px !important;
+}
+
+.move {
+    transition: all 0.2s;
+    &:hover {
+        transform: scale(1.10);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    }
+}
