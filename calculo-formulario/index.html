@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio clases</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- icono -->
+    <link rel="icon" href="img/logo-small.png">
+</head>
+<body> 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-large.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-sm-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">calcular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">formulario</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- header -->
+    <header class="container-fluid header d-flex flex-column align-items-center justify-content-center vh-50 w-100">
+        <h1 class="text-info display-1 fw-bold">Distancia MRU </h1>
+        <h2 class="text-white">Con la velocidad y el tiempo</h2>
+    </header>
+    <!-- main -->
+    <main class="container">
+        <section class="container my-5">
+            <h2 class="text-center">Calculador de la distancia</h2>
+            <section class="row my-3">
+                <article class="col-xl-5 border p-3 me-xl-4 rounded-3 mb-sm-4 mb-xl-0">
+                    <p>
+                        Para poder calcular la distancia que recorrio un vehiculo, debemos tener en cuenta la formula MRU porque esta formula se encarga de definir el movimiento en el cual su objeto "en este caso algun vehiculo" se desplaza en linea recta, en una sola direccion. <br>
+                        En esta formula debemos tener en cuenta 3 valores:
+                        <ul>
+                            <li>El movimiento</li>
+                            <li>La distancia</li>
+                            <li>La velocidad</li>
+                        </ul> 
+                        <br>
+                        No se incluye la aceleracion porque eso es en la formula del <b>MRUV</b>. <br>
+                        Y para calcular la distancia solamente debemos multiplicar la velocidad por el movimiento
+                    </p>
+                </article>
+                <article class="col-xl-4 border p-3 ms-xl-auto rounded-3 mb-sm-4 mb-xl-0">
+                    <form class="d-flex h-100 flex-column justify-content-evenly align-items-center" id="f1">
+                        <!-- tiempo -->
+                        <div class="mb-3">
+                          <label for="tiempo" class="form-label">Ingrese el tiempo en segundos</label>
+                          <input type="text"
+                           class="form-control"
+                            id="tiempo" 
+                            tabindex="1"
+                            name="tiempo"
+                            required>
+                        </div>
+                        <!-- velocidad -->
+                        <div class="mb-3">
+                          <label for="velocidad" class="form-label">Ingrese la velocidad</label>
+                          <input type="text"
+                           class="form-control"
+                            id="velocidad" 
+                            tabindex="1"
+                            name="velocidad"
+                            required>
+                        </div>
+                        <!-- boton -->
+                        <div class="text-center">
+                            <button type="button" class="btn btn-success" id="calcular" onclick="calculaMRU();">Calcular</button>
+                        </div>
+                        <!-- calculo -->
+                        <div class="my-3">
+                            <label for="result" class="form-label">Resultado</label>
+                            <input type="text" class="form-control" name="result" id="result">
+                        </div>
+                    </form>
+                </article>
+            </section>
+        </section>
+        <!-- Contenedor para la barra de menu -->
+        <section class="container my-5 border rounded-3 p-3">
+          <div class="container">
+            <!-- contenido  -->
+            <div class="row">
+              <h3 class="text-center">TEST BASICO EN LA CUARENTENA</h3>
+              <p class="text-center lead">
+                Existen muchos mitos y verdades sobre el nuevo coronavirus (n-Cov) detectado por primera vez en 2019 en China. ¿Se transmite de animales a pesonas?  Los primeros casos se detectaron en trabajadores de un mercado donde había presencia de animales, pero aún la fuente de infección se encuentra bajo investigación.
+              </p>
+              <!-- formulario -->
+              <div class="col-md-12">
+                <div class="mt-4 p-5 bg-dark text-light rounded">
+                  <!-- información -->
+                  <h3>Test básico</h3>
+                  <p>
+                    Responda cada una de las preguntas y le da enviar.
+                  </p>
+                  <!-- numero de preguntas  -->
+                  <ul class="nav nav-tabs " id="myTab" role="tablist">
+                      <!-- 01 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="uno" data-bs-toggle="tab" data-bs-target="#uno-panel" type="button" role="tab" aria-controls="uno-panel" aria-selected="true">01</button>
+                      </li>
+                      <!-- 02 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link " id="dos" data-bs-toggle="tab" data-bs-target="#dos-panel" type="button" role="tab" aria-controls="dos-panel" aria-selected="false">02</button>
+                      </li>
+                      <!-- 03 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tres" data-bs-toggle="tab" data-bs-target="#tres-panel" type="button" role="tab" aria-controls="tres-panel" aria-selected="false">03</button>
+                      </li>
+                      <!-- 04 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cuatro" data-bs-toggle="tab" data-bs-target="#cuatro-panel" type="button" role="tab" aria-controls="cuatro-panel" aria-selected="false">04</button>
+                      </li>
+                      <!-- 05 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cinco" data-bs-toggle="tab" data-bs-target="#cinco-panel" type="button" role="tab" aria-controls="cinco-panel" aria-selected="false">05</button>
+                      </li>
+                      <!-- 06 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="seis" data-bs-toggle="tab" data-bs-target="#seis-panel" type="button" role="tab" aria-controls="seis-panel" aria-selected="false">06</button>
+                      </li>
+                      <!-- 07 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="siete" data-bs-toggle="tab" data-bs-target="#siete-panel" type="button" role="tab" aria-controls="siete-panel" aria-selected="false">07</button>
+                      </li>
+                      <!-- 08 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="ocho" data-bs-toggle="tab" data-bs-target="#ocho-panel" type="button" role="tab" aria-controls="ocho-panel" aria-selected="false">08</button>
+                      </li>
+                      <!-- 09 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nueve" data-bs-toggle="tab" data-bs-target="#nueve-panel" type="button" role="tab" aria-controls="nueve-panel" aria-selected="false">09</button>
+                      </li>
+                      <!-- 10 -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="diez" data-bs-toggle="tab" data-bs-target="#diez-panel" type="button" role="tab" aria-controls="diez-panel" aria-selected="false">10</button>
+                      </li>
+                      <!-- resultado -->
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="resultado" data-bs-toggle="tab" data-bs-target="#resultado-panel" type="button" role="tab" aria-controls="resultado-panel" aria-selected="false">Resultado</button>
+                      </li>
+                      
+                  </ul>
+                  <!-- contenido de las preguntas -->
+                  <div class="tab-content" id="myTabContent">
+                      <!--  01  -->
+                      <div class="tab-pane fade show active border p-2 border-top-0" id="uno-panel" role="tabpanel" aria-labelledby="uno" tabindex="0">
+                        <div class="container p-3">
+                          <h4>Los científicos consideran a los virus estructuras biológicas vivas:</h4>
+                          <p><input type="radio" name="pregunta1" id="p11"> Verdadero</p>
+                          <p><input type="radio" name="pregunta1" id="p12"> Falso</p>
+                        </div>
+                      </div>
+                      <!--  02  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="dos-panel" role="tabpanel" aria-labelledby="dos" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>El termino virus proviene del latín, en griego se escribe ἰός y significa</h4>
+                          <p><input type="radio" name="pregunta2" id="p21">Pequeñísimo</p>
+                          <p><input type="radio" name="pregunta2" id="p22">Invisible</p>
+                          <p><input type="radio" name="pregunta2" id="p23">Toxina</p>
+                          <p><input type="radio" name="pregunta2" id="p24">Parásito</p>
+                        </div>
+                      </div>
+                      <!--  03  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="tres-panel" role="tabpanel" aria-labelledby="tres" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>El virus es muy frágil, lo único que lo protege es una capa externa de lípido:</h4>
+                          <p><input type="radio" name="pregunta3" id="p31">Verdadero</p>
+                          <p><input type="radio" name="pregunta3" id="p32">Falso</p>
+                        </div>
+                      </div>
+                      <!--  04  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="cuatro-panel" role="tabpanel" aria-labelledby="cuatro" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>¿Por qué hay que lavarnos las manos con jabón o detergente por 20 segundos o más para protegernos de los virus?</h4>
+                          <p><input type="radio" name="pregunta4" id="p41">Al estar limpios los virus no nos atacan</p>
+                          <p><input type="radio" name="pregunta4" id="p42">El jabón y detergente sirven como bactericidas</p>
+                          <p><input type="radio" name="pregunta4" id="p43">Porque se disuelve la grasa protectora del virus y este se desintegra</p>
+                          <p><input type="radio" name="pregunta4" id="p44">Porque se disuelve directamente la proteína que constituye el virus</p>
+                        </div>
+                      </div>
+                      <!--  05  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="cinco-panel" role="tabpanel" aria-labelledby="cinco" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>No se debe usar antibióticos para eliminar los virus:</h4>
+                          <p><input type="radio" name="pregunta5" id="p51">Verdadero</p>
+                          <p><input type="radio" name="pregunta5" id="p52">Falso</p>
+                        </div>
+                      </div>
+                      <!--  06  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="seis-panel" role="tabpanel" aria-labelledby="seis" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>¿Cuál es la proporción adecuada de cloro y agua qué disuelve la proteína del virus y lo desintegra por dentro?</h4>
+                          <p><input type="radio" name="pregunta6" id="p61">2 partes de cloro y 3 de agua</p>
+                          <p><input type="radio" name="pregunta6" id="p62">1 parte de cloro y 5 de agua</p>
+                          <p><input type="radio" name="pregunta6" id="p63">2 partes de cloro y 5 de agua</p>
+                          <p><input type="radio" name="pregunta6" id="p64">1 parte de cloro y 4 de agua</p>
+                        </div>
+                      </div>
+                      <!--  07  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="siete-panel" role="tabpanel" aria-labelledby="siete" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>Proteína compleja que se encuentra en el núcleo de las células y constituye el principal constituyente del material genético de los seres vivos</h4>
+                          <p><input type="radio" name="pregunta7" id="p71">ADN</p>
+                          <p><input type="radio" name="pregunta7" id="p72">ARN</p>
+                        </div>
+                      </div>
+                      <!--  08  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="ocho-panel" role="tabpanel" aria-labelledby="ocho" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>El alcohol disuelve la capa lípido del virus, o cualquier mezcla con alcohol a más del:</h4>
+                          <p><input type="radio" name="pregunta8" id="p81">50%</p>
+                          <p><input type="radio" name="pregunta8" id="p82">60%</p>
+                          <p><input type="radio" name="pregunta8" id="p83">70%</p>
+                          <p><input type="radio" name="pregunta8" id="p84">10%</p>
+                        </div>
+                      </div>
+                      <!--  09  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="nueve-panel" role="tabpanel" aria-labelledby="nueve" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>Ácido nucleico que participa en la síntesis de las proteínas y realiza la función de mensajero de la información genética.</h4>
+                          <p><input type="radio" name="pregunta9" id="p91">DHA</p>
+                          <p><input type="radio" name="pregunta9" id="p92">DPA</p>
+                          <p><input type="radio" name="pregunta9" id="p93">ARN</p>
+                          <p><input type="radio" name="pregunta9" id="p94">ADN</p>
+                        </div>
+                      </div>
+                      <!--  10  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="diez-panel" role="tabpanel" aria-labelledby="diez" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>La luz ultravioleta sobre cualquier objeto que pueda contenerlo desintegra la proteína del virus:</h4>
+                          <p><input type="radio" name="pregunta10" id="p101">Verdadero</p>
+                          <p><input type="radio" name="pregunta10" id="p102">Falso</p>
+                        </div>
+                      </div>
+                      <!--  resultado  -->
+                      <div class="tab-pane fade border p-2 border-top-0" id="resultado-panel" role="tabpanel" aria-labelledby="resultado" tabindex="0">
+                        <div class="container bg-dark p-3">
+                          <h4>Resultados del Test</h4>
+                          <input type="button" value=" R E S U L T A D O " onClick="resultado()" class="btn btn-primary"/>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <!-- scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
