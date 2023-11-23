@@ -1,0 +1,502 @@
+/*reinicio de cajas*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+/*
+Consejo: si el atributo no se aplica usar "!importan" al lado del atributo
+    .prueba {
+        color: red !importan;
+    }
+*/
+/*Colores establecidos*/
+/*
+Para usarlos solo debes poner:
+    .prueba {
+        color: var(--azul);
+    }
+*/
+html {
+    --negro : #000000;
+    --azul : #2E73DA;
+    --gris-claro : #D9D9D9;
+    --gris : #888888;
+    --blanco : #FFFFFF;
+    --verde-oscuro : #6B7D55;
+    --verde : #18A926;
+}
+
+/*
+Codigo CSS INDEX.PHP JOSUE HUAYAPA JULCA
+*/
+
+/*poner aqui los codigo para el diseño mobile*/
+
+.img-hero {
+    width: 100%;
+    filter: brightness(80%);
+}
+
+.footer-bottom {
+    background-color: var(--verde-oscuro);
+}
+
+.fanpage {
+    position: relative;
+    & .box1 {
+        width: 100%;
+        & img {
+            border-radius: 0.5rem;
+            width: 100%;
+            height: 20rem;
+            padding: 0;
+        }
+    }
+    & .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+        width: 7rem;
+        height: 7rem;
+        background-color: #FFFFFF;
+        border: 2px solid gray;
+        border-radius: 50%;
+        & img {
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+    & .box2 {
+        padding: 5rem 0;
+        height: 10rem;
+    }
+}
+
+.section-info {
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    & p {
+        padding: 3rem;
+    }
+    & img {
+        margin-top: 3rem;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+
+.products {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    & section {
+        border-radius: 1rem;
+        width: 10rem;
+        margin: 1rem;
+        background-color: var(--gris-claro);
+        padding: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        & img {
+            width: 100%;
+        }
+        & p {
+            width: 100%;
+        }
+        &:hover {
+            scale: 1.2;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    }
+}
+
+.article-p {
+    display: flex;
+    width: 100%;
+    & .cards-wrapper {
+        display: flex;
+        justify-content: center;
+        & .div {
+            background-color: var(--blanco);
+            border-radius: 1rem;
+            width: 15rem;
+            padding: 2rem;
+            margin: 1rem;
+            text-align: center;
+            & img {
+                margin-left: auto;
+                margin-right: auto;
+                width: auto;
+                height: 8rem;
+            }
+            & div {
+                width: 10rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+} 
+
+.section1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+/* responsivo carrusel */
+.img-wrapper {
+    width: auto;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.img {
+    width: auto;
+    height: 10rem;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+    .carousel-inner1 {
+        display: flex;
+    }
+    
+    .carousel-item1 {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+    .img-wrapper {
+        height: 10rem;
+    }
+}
+.carousel-inner1 {
+    padding: 1em;
+    width: 100%;
+}
+.card1 {
+    margin: 0 0.5rem;
+}
+
+
+/*poner aqui el codigo para tamaño grande*/
+@media (min-width: 1024px) {
+    .carousel-item1 {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/6);
+    }
+    .img-hero {
+        width: 100%;
+        height: 80vh;
+    }
+    .section-info {
+        border-radius: 0.5rem;
+        margin-bottom: 3rem;
+        padding: 0 !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        & section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 60%;
+            & p {
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        & img {
+            margin-top: 0;
+            width: 30rem;
+            border-radius: 1rem;
+            margin: 2rem;
+        }
+    }
+    .section1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60rem;
+    }
+    
+}
+
+/* ------------ CÓDIGO DE PÁGINA SERVICIOS ---------- */
+.bg-servicios{
+    background-color: #D9D9D9;
+}
+.bg-servicios img{
+    padding: 0.5rem 0rem;
+}
+.bg-servicios img:hover{
+    transform: scale(1.1);
+    transition: 0.75s;
+}
+.btn-mas-info{
+    background-color: #198754 !important;
+    color: #FFFFFF !important;
+    border: #198754 2px solid !important;
+}
+.btn-mas-info:hover{
+    background-color: rgb(0, 0, 0,0) !important;
+    border: #198754 2px solid !important;
+    color: #3f3f3f !important;
+   
+}
+.footer-servicios{
+    display: flex;
+    align-items: center;
+}
+.derechos-reservados{
+    background-color: #54635A;
+    color: #FFFFFF;
+}
+/* ---------- MEDIA QUERIES DE PÁGINA SERVICIOS ---------*/
+@media screen and (max-width: 991px){
+    .bg-servicios{
+        background-color: rgb(0, 0, 0,0);
+    }
+    .bg-servicios-gris{
+        background-color: #D9D9D9;
+    }
+    .bg-servicios-general{
+        padding: 1rem;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .info{
+        padding: 0rem 2rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .bg-servicios-general{
+        padding: 1rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*-------- FIN DE CÓDIGO DE LA PAGINA SERVICIOS ------------*/
+
+/*------------ CÓDIGO DE LA PAGINA LANDING PAGE -------------*/
+
+/* tipografica para titulos */
+@import url('https://fonts.googleapis.com/css2? family= Antic+Didone & display=swap');
+.titulo-landing{
+    font-family: 'Antic Didone', serif;
+}
+.body-landing{
+    height: 100vh;
+}
+.pad_logo{
+    padding-left: 3rem;
+}
+@media screen and (max-width: 991px){
+    .pad_logo{
+        padding-left: 0rem;
+    }
+}
+/* Imagen de fondo */
+.main{
+    background: linear-gradient(rgb(5, 7, 12, 0.35), rgb(5, 7, 12, 0.35)),
+    url(../img/dc-landing-bg.jpg) no-repeat center;
+    min-height: 90vh;
+    height: max-content;
+    background-size: cover;
+}
+.fila-main{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+/* MAIN lado izquierdo */
+.contenedor-productos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.contenedor-productos img{
+    height: 150px;
+    width: 100px;
+    border-radius: 15px;
+    margin: 10px 10px;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.contenedor-productos img:hover{
+    transform: scale(1.1);
+    transition: 0.15s;
+}
+
+.btn-conocer-mas{
+    text-align: center;
+    background-color: #2E73DA;
+    border: #2E73DA 1px solid;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding: 0.45rem 7rem;
+    color: #FFFFFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
+}
+.btn-conocer-mas:hover{
+    background-color: rgb(46, 115, 218, 0.15);
+}
+@media screen and (max-width: 991px){
+    .btn-conocer-mas{
+        margin-bottom: 3rem;
+        padding-inline: 15rem;  
+    }
+}
+@media screen and (max-width: 630px){
+    .btn-conocer-mas{
+        margin-bottom: 3rem;
+        padding-inline: 7rem;  
+    }
+}
+
+/*
+CODIGO CSS SERVICIOS.PHP AND LANDING.PHP DANIEL
+*/
+
+/* MAIN lado derecho */
+.container-form{
+    width: 90%;
+    height: max-content;
+    border-radius: 20px;
+    padding: 1rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+.container-form input{
+    border: #ffff 0px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.container-form label{
+    padding-top: 8px;
+}
+.btn-enviar{
+    color: #FFFFFF;
+    width: 90%;
+    background-color: #6B7D55;
+    border: #6B7D55 1px solid;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+.btn-enviar:hover{
+    background-color: rgba(0, 0, 0, 0);
+    border: #6B7D55 0px solid;
+    color: #000000;
+}
+
+/*--------- FIN DE CÓDIGO DE LANDING PAGE ---------*/
+
+
+/*
+CODIGO CSS MEDINA CONTACTO.PHP
+*/
+.main-contacto {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    padding: 55px 55px;
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 380px;
+    & label {
+        color: #283629;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        }
+    
+    & input, textarea {
+        width: 100%;
+        padding: 17px 25px;
+        border-radius: 0.5rem !important;
+        margin-bottom: 20px;
+        background-color: #d2d4d3;
+        border: 1px solid rgb(222, 225, 222);
+        color: #283629;
+        outline: none;
+    }
+    
+    & input::placeholder, textarea::placeholder {
+        color: #7f827f;
+    }
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hero-img- {
+   width: 100%;
+   max-height: 100%;
+}
+
+h2 {
+    color: #283629;
+    font-size: 25px;
+}
+
+
+.btn {
+    font-size: 16px;
+    color: #ffffff;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51D94C;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #50e04b;
+}
+
+@media(max-width:991px) {
+
+    .main-contacto {
+        padding: 30px;
+        & .form {
+            padding: 50px 30px;
+            width: 100%;
+        }
+        & input {
+            padding: 15px;
+        }
+    }
+}
+
+/*poner aqui el codigo para tamaño grande*/
+@media (min-width: 1024px) {
+    .form {
+        width: 100%;
+    }
+    .input-group {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}

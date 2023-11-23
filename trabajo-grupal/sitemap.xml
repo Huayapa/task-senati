@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"> 
+<url>
+<loc>https://huayapa.000webhostapp.com/index.php</loc>
+<priority>0.8</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-11-23</lastmod>
+</url>
+<url>
+<loc>https://huayapa.000webhostapp.com/servicios.php</loc>
+<priority>0.8</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-11-23</lastmod>
+</url>
+<url>
+<loc>https://huayapa.000webhostapp.com/contacto.php</loc>
+<priority>0.8</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-11-23</lastmod>
+</url>
+<url>
+<loc>https://huayapa.000webhostapp.com/noticia.php</loc>
+<priority>0.8</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-11-23</lastmod>
+</url>
+<url>
+<loc>https://huayapa.000webhostapp.com/landing.php</loc>
+<priority>0.8</priority>
+<changefreq>monthly</changefreq>
+<lastmod>2023-11-23</lastmod>
+</url>
+</urlset>
